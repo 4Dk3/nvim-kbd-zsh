@@ -62,6 +62,7 @@ alias sudo=doas
 alias vim=nvim
 alias vi=nvim
 alias python=python3
+alias pw=powerprofilesctl
 
 #
 # input
