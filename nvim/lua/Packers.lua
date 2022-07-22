@@ -11,6 +11,7 @@ require('packer').startup(function()
   use "akinsho/bufferline.nvim"
   use 'nvim-lualine/lualine.nvim'
   use "vim-scripts/AutoComplPop"
+  use "brenoprata10/nvim-highlight-colors"
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   --use 'neoclide/coc.nvim'
 end)

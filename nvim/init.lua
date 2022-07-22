@@ -59,6 +59,9 @@ go.fileencoding = "utf-8"
     tabline = {},
   }
 
+
+  require('nvim-highlight-colors').setup {}
+
   require("bufferline").setup{
     options = {
     close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"

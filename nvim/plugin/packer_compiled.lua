@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-highlight-colors"] = {
+    loaded = true,
+    path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nvim-highlight-colors",
+    url = "https://github.com/brenoprata10/nvim-highlight-colors"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
