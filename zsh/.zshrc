@@ -57,7 +57,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 # Set a custom prefix for the generated aliases. The default prefix is 'G'.
 #zstyle ':zim:git' aliases-prefix 'g'
 
-alias code=codium
+#alias code=codium
 alias sudo=doas
 alias vim=nvim
 alias vi=nvim
