@@ -1,6 +1,6 @@
 # General
 set $mod Mod4
-font MengoLSL Nerd Font 10
+font MesloLGL Nerd Font 10
 
 # Variables
 set $menu rofi -show drun -show-icons
@@ -20,7 +20,8 @@ smart_gaps on
 
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3
-exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/asuka-longinus.jpg
+exec_always --no-startup-id nm-applet 
+exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/rei-ayanami.jpeg
 exec_always --no-startup-id picom -b -f --experimental-backends
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id dunst
@@ -31,9 +32,9 @@ exec_always --no-startup-id dunst
 default_border pixel 2
 
 # border colors
-client.focused #343746 #343746 #F8F8F2 #343746 #343746
-client.focused_inactive #343746 #343746 #F8F8F2 #21222C #21222C
-client.unfocused #343746 #343746 #F8F8F2 #21222C #21222C
+client.focused #fd6666 #fd6666 #F8F8F2 #343746 #343746
+client.focused_inactive #2e3440 #2e3440 #F8F8F2 #21222C #21222C
+client.unfocused #2e3440 #2e3440 #F8F8F2 #21222C #21222C
 
 
 # Keybinds
@@ -68,14 +69,14 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun -show-icons
 
 # Volume control
-bindsym $mod+f3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym $mod+f2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym $mod+f1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym $mod+f4 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym $mod+F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym $mod+F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym $mod+F4 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Brightness control
-bindsym $mod+f11 exec light -U 5
-bindsym $mod+f12 exec light -A 5
+bindsym $mod+F11 exec light -U 5
+bindsym $mod+F12 exec light -A 5
 
 
 
@@ -113,10 +114,10 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+shift+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
+# Layouts
+bindsym $mod+Shift+a layout stacking
 bindsym $mod+Shift+w layout tabbed
-bindsym $mod+Shift+e layout toggle split
+bindsym $mod+Shift+d layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle

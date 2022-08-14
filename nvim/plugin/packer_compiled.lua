@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/AutoComplPop",
     url = "https://github.com/vim-scripts/AutoComplPop"
   },
+  NeoSolarized = {
+    loaded = true,
+    path = "/home/dk43/.local/share/nvim/site/pack/packer/start/NeoSolarized",
+    url = "https://github.com/overcache/NeoSolarized"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -93,6 +98,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/monokai.nvim",
     url = "https://github.com/tanvirtin/monokai.nvim"
+  },
+  ["nord-vim"] = {
+    loaded = true,
+    path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nord-vim",
+    url = "https://github.com/arcticicestudio/nord-vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,

@@ -2,9 +2,9 @@
 require("Keys")
 require("Packers")
 -- Colorscheme
-vim.g.colors_name = gruvbox
-vim.g.gruvbox_contrast_dark = "hard"
-vim.cmd "colorscheme gruvbox"
+vim.g.colors_name = nord
+--vim.g.gruvbox_contrast_dark = "hard"
+vim.cmd "colorscheme nord"
 
 -- Idk but things related to tab and his width
 
@@ -19,10 +19,10 @@ o.completeopt = "longest"
 bo.expandtab = true
 bo.shiftwidth = 2
 bo.softtabstop = 2
-wo.cursorline = true
+wo.cursorline = false
 wo.number = true
 wo.relativenumber = true
-wo.numberwidth = 4
+wo.numberwidth = 2
 wo.signcolumn = "yes"
 go.termguicolors = false
 go.cmdheight = 1
@@ -54,7 +54,7 @@ go.fileencoding = "utf-8"
 
   require('lualine').setup{
     options = {icons_enabled = true,
-    theme = "gruvbox"},
+    theme = "nord"},
 
     tabline = {},
   }

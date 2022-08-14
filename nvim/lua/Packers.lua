@@ -5,6 +5,8 @@ require('packer').startup(function()
   use "ryanoasis/vim-devicons"
   use 'windwp/nvim-autopairs'
   use 'gruvbox-community/gruvbox'
+  use 'overcache/NeoSolarized'
+  use 'arcticicestudio/nord-vim'
   use 'kyazdani42/nvim-tree.lua'
   use "kyazdani42/nvim-web-devicons" 
   use "sheerun/vim-polyglot"
