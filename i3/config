@@ -5,8 +5,8 @@ font MesloLGL Nerd Font 10
 # Variables
 set $menu rofi -show drun -show-icons
 set $srcs flameshot gui
-set $web firefox
-set $fm nautilus
+set $web brave
+set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run com.discordapp.Discord
@@ -23,7 +23,8 @@ exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id nm-applet 
 exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/rei-ayanami.jpeg
 exec_always --no-startup-id picom -b -f --experimental-backends
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
+exec_always --no-startup-id xrandr --output eDP1 --set "scaling mode" "Full aspect"
 exec_always --no-startup-id dunst
 
 # Borders
