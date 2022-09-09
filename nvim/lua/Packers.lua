@@ -7,6 +7,7 @@ require('packer').startup(function()
   use 'gruvbox-community/gruvbox'
   use 'overcache/NeoSolarized'
   use 'arcticicestudio/nord-vim'
+  use "EdenEast/nightfox.nvim"
   use 'kyazdani42/nvim-tree.lua'
   use "kyazdani42/nvim-web-devicons" 
   use "sheerun/vim-polyglot"

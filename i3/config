@@ -3,20 +3,24 @@ set $mod Mod4
 font MesloLGL Nerd Font 10
 
 # Variables
-set $menu rofi -show drun -show-icons
+#set $menu rofi -show drun -show-icons
+set $menu ulauncher-toggle
 set $srcs flameshot gui
-set $web brave
-set $fm thunar
+set $web firefox
+set $fm nautilus
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run com.discordapp.Discord
 set $py pycharm
+set $term kitty
 
-gaps inner 2
-gaps outer 2
+for_window [class="^.*"] border pixel 0
 
-smart_borders on
-smart_gaps on
+#gaps inner 2
+#gaps outer 2
+
+#smart_borders on
+#smart_gaps on
 
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3
@@ -30,10 +34,10 @@ exec_always --no-startup-id dunst
 # Borders
 
 # border width
-default_border pixel 2
+default_border pixel 0
 
 # border colors
-client.focused #fd6666 #fd6666 #F8F8F2 #343746 #343746
+client.focused #5e81ac #5e81ac #F8F8F2 #343746 #343746
 client.focused_inactive #2e3440 #2e3440 #F8F8F2 #21222C #21222C
 client.unfocused #2e3440 #2e3440 #F8F8F2 #21222C #21222C
 
@@ -44,7 +48,7 @@ client.unfocused #2e3440 #2e3440 #F8F8F2 #21222C #21222C
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+c exec alacritty
+bindsym $mod+c exec $term
 
 # Apps bindings
 
@@ -67,8 +71,7 @@ bindsym $mod+s exec $srcs
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -show drun -show-icons
-
+bindsym $mod+space exec $menu
 # Volume control
 bindsym $mod+F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym $mod+F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%

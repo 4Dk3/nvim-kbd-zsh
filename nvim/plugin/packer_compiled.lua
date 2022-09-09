@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/monokai.nvim",
     url = "https://github.com/tanvirtin/monokai.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["nord-vim"] = {
     loaded = true,
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/nord-vim",

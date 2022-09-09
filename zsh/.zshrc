@@ -64,6 +64,8 @@ alias vi=nvim
 alias python=python3
 alias pw=powerprofilesctl
 
+ export PATH="$HOME/.local/bin:$PATH"
+
 #
 # input
 #
